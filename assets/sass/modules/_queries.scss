@@ -1,0 +1,534 @@
+@media screen and (min-width: 375px) {
+    #topNav {
+        .navCon {
+            ul {
+                width: 85%;
+                margin: 0 auto;
+            }
+        }
+    }
+    #home {
+        .homeArticles {
+            .articlesWrapper {
+                .article {
+                    p {
+                        width: 86%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 411px) {
+    .pageIntro {
+        .topText {
+            margin-left: 2%;
+            h1 {
+                margin-left: 0;
+                width: 85%;
+                line-height: 2.3rem;
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-size: 1.125rem;
+            }
+        }
+    }
+
+    #home {
+        margin-bottom: 10%;
+        .homeArticles {
+            h2:nth-child(1) {
+                margin-left: 5%;
+            }
+            .articlesWrapper {
+                flex-direction: row;
+                overflow-x: auto;
+
+                .article {
+                    width: 190px;
+                    margin: 0 4% 8% 2%;
+                    flex: 0 0 auto;
+                    height: 317px;
+
+                    img {
+                        width: 180px;
+                        height: 130px;
+                    }
+                }
+            }
+        }
+    }
+
+    .blogPost {
+        .postWrapper {
+            .postSmall {
+                h1 {
+                    font-size: 2.2rem;
+                    line-height: 2.8rem;
+                }
+
+                div {
+                    h2, h3, h4, h5 {
+                        font-size: 1.7rem;
+                        line-height: 2rem;
+                    }
+
+                    p {
+                        font-size: 1.05rem;
+                        line-height: 1.45rem;
+                    }
+                }
+
+                .postPreview {
+                    p {
+                        font-size: 0.95rem;
+                        line-height: 1.3rem;
+                    }
+                }
+            }
+
+            .postImage {
+                width: 93%;
+                height: 220px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 700px) {
+    #topNav {
+        .navCon {
+            ul {
+                width: 60%;
+                margin: 0 auto;
+                li {
+                    width: 28px;
+                }
+            }
+        }
+
+        .settingsBtn {
+            right: 2%;
+            top: 20%;
+            width: 19px;
+        }
+    }
+
+    .pageIntro {
+        .topText {
+            &::after {
+                position: absolute;
+                background-color: rgb(212, 212, 212);
+                width: 2px;
+                height: 120%;
+                content: '';
+                top: 0;
+                right: 10%;
+            }
+            h1 {
+                line-height: 2.4rem;
+                font-size: 1.9rem;
+            }
+
+            h2 {
+                font-size: 1.25rem;
+            }
+        }
+
+        .weather {
+            display: flex;
+            align-items: center;
+            margin-top: 5%;
+            img {
+                width: 55px;
+                filter: brightness(0);
+            }
+
+            .weatherTemp {
+                font-family: $body-font;
+                font-size: 1.4rem;
+                margin: 0 12% 0 6%;
+                font-weight: bold;
+            }
+
+            .weatherCity {
+                font-family: $body-font;
+                font-weight: bold;
+                font-size: 0.8rem;
+                line-height: 0.9rem;
+
+                div:nth-child(1) {
+                    color: rgb(161, 161, 161);
+                }
+            }
+        }
+    }
+
+    #home {
+
+        .homeArticles {
+            h2 {
+                font-size: 1.4rem;
+            }
+            .articlesWrapper {
+                .article {
+                    margin-right: 2%;
+                }
+            }
+        }
+    }
+
+    
+}
+
+@media screen and (min-width: 1024px) {
+    #container {
+        width: 95%;
+        height: 95vh;
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        margin: 0;
+    
+          #routerWrapper {
+            margin-top: 0;
+            width: 99%;
+            height: 99%;
+            overflow: auto;
+            scrollbar-width: thin;
+          }
+    }
+
+
+    .page {
+        padding-left: 115px !important;
+    }
+
+    header {
+        width: 100px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        height: 95%;
+        top: 2%;
+        left: 2.5%;
+        overflow:hidden;
+        box-shadow: 5px 0 10px -5px rgba(51, 51, 51, 0.308);
+    }
+    
+    #topNav {
+        flex-direction: column;
+    
+        .navCon {
+            margin-top: 10%;
+            
+            ul {
+                display: block;
+                li {
+                    width: 28px;
+                    margin: 40px auto;
+                }
+            }
+        }
+    
+        .settingsBtn {
+            width: 30px;
+            top: 93%;
+            right: 50%;
+            transform: translateX(50%);
+        }
+    }
+
+    #home {
+        margin-bottom: 0;
+
+        .homeArticles {
+            .articlesWrapper {
+                .article {
+                    width: 215px;
+                    img {
+                        width: 200px;
+                        height: 140px;
+                    }
+                    p {
+                        width: 90%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .blogPost {
+        .postWrapper {
+            margin-top: 3%;
+            margin-bottom: 3%;
+            .postSmall {
+                width: 62.5rem;
+    
+                h1 {
+                    font-size: 4.25rem;
+                    line-height: 5.25rem;
+                    width: 70%;
+                    margin: 0 auto;
+                }
+    
+                div {
+                    p, h1, h2, h3, h4, h5 {
+                        margin: 0 auto 2%;
+                        font-size: 0.96rem;
+                        line-height: 1.6rem;
+                        letter-spacing: 0.1px;
+                    }
+    
+                    h1, h2, h3, h4, h5 {
+                        font-size: 1.9rem;
+                        margin-top: 6%;
+                    }
+                }
+    
+                .postPreview {
+                    p {
+                      width: 70%;
+                      line-height: 1.5rem;
+                      font-size: 1rem;
+                      margin: 2% auto 5%;
+                    }
+                }
+            }
+    
+            .postImage {
+                width: 85%;
+                margin: 0 auto 4%;
+                height: 550px;
+                border-radius: 8px;
+            }
+    
+            .postImage2 {
+                margin-top: 5%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .pageIntro {
+        .topText {
+            padding-top: 1%;
+        }
+    }
+}
+
+@media screen and (min-width: 1600px) {
+
+    .pageIntro {
+        margin-top: 3%;
+        margin-bottom: 5%;
+
+        .topText {
+            margin-right: 11%;
+            margin-left: 0;
+            padding-top: 0;
+
+            &::after {
+                position: absolute;
+                background-color: rgb(212, 212, 212);
+                height: 110%;
+                top: 50%;
+                right: -5%;
+                transform: translateY(-50%);
+            }
+            h1 {
+                font-size: 2.3rem;
+                font-weight: bold;
+                line-height: 3rem;
+            }
+    
+            h2 {
+                font-size: 1.2rem;
+            }
+        }
+
+        .weather {
+            display: flex;
+            align-items: center;
+            margin-top: 0;
+
+            .weatherTemp {
+                font-family: $body-font;
+                font-size: 1.4rem;
+                margin: 0 8% 0 6%;
+                font-weight: bold;
+            }
+
+            .weatherCity {
+                font-family: $body-font;
+                font-weight: bold;
+                font-size: 0.8rem;
+                line-height: 0.9rem;
+
+                div:nth-child(1) {
+                    color: rgb(161, 161, 161);
+                }
+            }
+        }
+    }
+
+    #home {
+        margin-bottom: 2%;
+    
+        .homeArticles {
+            width: 90%;
+            margin-left: 2.5%;
+            margin-top: 4%;
+            h2 {
+                margin-left: 0.5%;
+                font-size: 1.5rem;
+                margin-bottom: 1%;
+                width: 100%;
+                &:nth-child(1) {
+                    margin-left: 0.5%;
+                }
+            }
+            .articlesWrapper {
+                flex-direction: row;
+                justify-content: normal;
+                overflow-x: initial;
+                .article {
+                    width: 220px;
+                    height: 330px;
+                    border-radius: 15px;
+                    box-shadow: 0 4px 10px -2px #6f808f9f;
+                    margin-bottom: 0;
+                    margin-left: 0;
+                    margin-right: 2%;
+
+                    &:nth-child(n+5) {
+                        display: block;
+                    }
+                    img {
+                        border-radius: 15px;
+                        height: 140px;
+                        width: 92%;
+                    }
+                    h2 {
+                        font-size: 1.1rem;
+                        margin-top: 5%;
+                        margin-left: 4%;
+                        width: 90%;
+                    }
+        
+                    p {
+                        width: 90%;
+                        margin-left: 4%;
+                        margin-top: 2%;
+                        line-height: 1.35rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .blogPost {
+        .postWrapper {
+            .postImage {
+                width: 75%;
+                height: 650px;
+            }
+
+            .postSmall {
+                h1 {
+                    margin: 0 0 1%;
+                }
+
+                .postPreview {
+                    p {
+                        width: 80%;
+                        margin-left: 0;
+                        margin-right: 0;
+                        margin-top: 1%;
+                    }
+                }
+            }
+        }
+    }
+
+    #discover {
+        .discoverTop {
+            width: 85%;
+
+            .discoverFeatured, .discoverRecents {
+                height: 550px;
+            }
+
+            .discoverFeatured {
+                a {
+                    margin: 0 auto;
+                }
+            }
+
+            .discoverRecents {
+                &__btns, &__list {
+                    max-width: 400px;
+                }
+
+                &__list {
+                    margin-top: 5%;
+                }
+            }
+        }
+
+        .discoverTopics {
+            margin-top: 5%;
+
+            &__wrapper { width: 85%; }
+
+            &__content { width: 60%; }
+
+            &__contentWrapper { width: 100%; }
+
+            &__main { 
+                p { width: 90%; } 
+                div { padding-bottom: 80%; }
+            }
+
+            &__list {
+                width: 50%;
+
+                &--topics {
+                    margin-left: 9%;
+                    max-width: 300px;
+                }
+            }
+
+            &__item {
+                width: 100%;
+
+                img {
+                    width: 70px;
+                    height: 70px;
+                }
+            }
+
+            &__info { width: 95%; }
+
+            &__topics { h2 { left: 9%; } }
+
+            &__topic { 
+                width: 75%;
+                margin: 25px 0 30px 20px;
+                &::before {
+                    padding-right: 40px;
+                }
+            }
+        }
+    }
+
+    #featured {
+        .featuredTop, .featuredPosts {
+            height: 75vh;
+        }
+    }
+}

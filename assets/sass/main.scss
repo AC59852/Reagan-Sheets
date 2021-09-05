@@ -1,0 +1,116 @@
+@import './modules/_vars.scss';
+@import './modules/_navigation.scss';
+@import './modules/_components.scss';
+@import './modules/_home.scss';
+@import './modules/_feed.scss';
+@import './modules/_discover.scss';
+@import './modules/_featured.scss';
+@import './modules/_post-specific.scss';
+@import './modules/_queries.scss';
+@import './modules/_darkmode.scss';
+
+#app {
+    width: 100%;
+    background: rgb(236, 236, 236);
+  }
+
+
+  #routerWrapper::-webkit-scrollbar {
+    display: block;
+    width: 8px;
+    }
+
+
+#routerWrapper::-webkit-scrollbar-track {
+    background: transparent;
+}
+    
+#routerWrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(139, 139, 139, 0.377);
+    border-right: none;
+    border-left: none;
+    border-radius: 200px;
+}
+
+#routerWrapper::-webkit-scrollbar-track-piece:end {
+    background: transparent;
+    margin-bottom: 4px; 
+}
+
+#routerWrapper::-webkit-scrollbar-track-piece:start {
+    background: transparent;
+    margin-top: 4px;
+}
+
+#container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 25px;
+    box-shadow: 0 0 20px 5px rgba(131, 131, 131, 0.322);
+    width: 95%;
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#feed {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    .headings {
+        width: 40%;
+
+        .fonts {
+            margin: 3% 0;
+            display: flex;
+            align-items: center;
+            div {
+                width: 70%;
+    
+                h2 {
+                    font-size: 1.4rem;
+                    margin-bottom: 1.5%;
+                    font-weight: bold;
+                }
+    
+                h3 {
+                    font-size: 1.2rem;
+                    line-height: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .text {
+        width: 60%;
+        margin: 2% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h2 {
+            font-size: 2.4rem;
+            font-weight: bold;
+            width: 75%;
+            line-height: 3rem;
+        }
+
+        h3 {
+            font-size: 2.4rem;
+            font-weight: 800;
+            width: 75%;
+            line-height: 3rem;
+            text-transform: uppercase;
+            justify-self: flex-end;
+        }
+
+        p {
+            text-align: left;
+            width: 75%;
+            font-size: 1.1rem;
+            line-height: 1.8rem;
+            margin: 3% 0 auto;
+            overflow-y: auto;
+        }
+    }
+}

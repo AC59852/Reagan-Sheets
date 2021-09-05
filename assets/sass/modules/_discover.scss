@@ -1,0 +1,330 @@
+#discover {
+    img { border-radius: 5px; }
+    .discoverTop {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: 0 auto;
+
+        .discoverFeatured, .discoverRecents {
+            height: 500px; 
+            margin: 0 auto; 
+        }
+
+        .discoverFeatured {
+            width: 50%;
+
+            a {
+                height: 100%;
+                width: 100%;
+                max-width: 715px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-end;
+                background: linear-gradient(#00000040, #00000040, ), url("~assets/images/canyon.jpg");
+                background-size: 140%;
+                background-position: center;
+                box-shadow: $discover-shadow;
+                text-decoration: none;
+                transition: background-size 0.3s ease;
+                border-radius: 5px;
+
+                &:hover {
+                    background-size: 150%;
+                }
+            }
+
+            &__content {
+                color: white;
+                text-decoration: none;
+                padding-left: 15px;
+                padding-bottom: 15px;
+            }
+
+            &__title {
+                font-family: $header-font;
+                font-size: 1.4rem;
+                font-weight: 400;
+                margin: 15px 0 5px;
+            }
+
+            &__info, &__tag {
+                font-family: $body-font;
+                font-size: 13px;
+            }
+
+            &__tag {
+                width: 74px;
+                padding: 8px 0;
+                background: $discover-gradient;
+                border-radius: 9000px;
+                text-decoration: none;
+                display: block;
+                text-align: center;
+            }
+        }
+
+        .discoverRecents {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &__btns, &__list {
+                width: 70%;
+                margin: 0 auto;
+            }
+
+            &__btns {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 2%;
+
+                button {
+                    width: 110px;
+                    padding: 10px 0;
+                    background: transparent;
+                    border: transparent;
+                    border-radius: 9000px;
+                    color: #787878;
+                    font-family: $header-font;
+                    font-size: 16px;
+                    cursor: pointer;
+                }
+
+                button.active {
+                    background: $discover-gradient;
+                    color: white;
+                }
+            }
+
+            &__list {
+                margin-top: auto;
+                display: flex;
+                flex-direction: column;
+            }
+
+            &__item {
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                margin: 15px 0;
+                width: 100%;
+                
+                a {
+                    display: flex;
+                    text-decoration: none;
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                        margin-right: 4%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+
+                    h2 {
+                        font-family: $header-font;
+                        font-size: 1rem;
+                        margin-bottom: 5px;
+                        color: #041e3b;
+                        font-weight: bold;
+                    }
+
+                    p {
+                        font-family: $body-font;
+                        font-size: 0.9rem;
+                        line-height: 1.2rem;
+                        color: rgba(88,88,88,0.77255);
+                    }
+                }
+            }
+        }
+    }
+
+    .discoverTopics {
+        margin: 7% 0 4%;
+        &__wrapper {
+            display: flex;
+            justify-content: space-between;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        &__content {
+            width: 55%;
+        }
+        
+        &__content, &__topics {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            h2 {
+                font-family: $header-font;
+                font-size: 1.4rem;
+                position: relative;
+                margin-bottom: 5%;
+
+                &::after {
+                    position: absolute;
+                    content: "";
+                    background: $discover-gradient;
+                    width: 100%;
+                    height: 3px;
+                    left: 0;
+                    top: 125%;
+                }
+            }
+        }
+
+        &__contentWrapper {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &__main {
+            width: 47%;
+            max-width: 350px;
+            text-decoration: none;
+            color: black;
+
+            div {
+                width: 100%;
+                padding-bottom: 75%;
+                overflow: hidden;
+                position: relative;
+                box-shadow: $discover-shadow;
+                border-radius: 5px;
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: center;
+                    transition: transform 0.3s ease;
+
+    
+                    &:hover {
+                        transform: scale(1.1);
+                    } 
+                }
+            }
+
+            span, p {
+                font-size: 0.8rem;
+            }
+
+            span {
+                display: block;
+                margin: 16px 0 5px;
+                font-family: $body-font;
+            }
+
+            h3 {
+                margin: 0 0 5px;
+                font-family: $header-font;
+                font-size: 1.2rem;
+                font-weight: bold;
+                line-height: 1.5rem;
+            }
+
+            p {
+                font-family: $body-font;
+                line-height: 1.2rem;
+                width: 85%;
+            }
+        }
+
+        &__list {
+            width: 50%;
+
+            &--topics {
+                width: calc(70% - 50px) !important;
+                margin-left: 5%;
+                border: solid 2px rgba(0, 0, 0, 0.048);
+                border-radius: 5px;
+                padding: 15px 25px;
+                height: 100%;
+            }
+        }
+
+        &__item {
+            display: flex;
+            margin: 20px auto;
+            text-decoration: none;
+            width: 90%;
+
+            &:first-child {
+                margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+
+            img {
+                width: 65px;
+                height: 65px;
+                object-fit: cover;
+                object-position: center;
+                margin-right: 4%;
+            }
+        }
+
+        &__title {
+            font-family: $header-font;
+            font-size: 1rem;
+            line-height: 1.2rem;
+            color: #041e3b;
+            font-weight: bold;
+        }
+
+        &__info {
+            font-family: $body-font;
+            font-size: 0.8rem;
+            line-height: 1.1rem;
+            color: rgba(88,88,88,.77255);
+            display: block;
+            width: 90%;
+        }
+
+        &__topics {
+            width: 45%;
+
+            h2 {
+                left: 5%;
+            }
+        }
+
+        &__topic {
+            font-family: $body-font;
+            font-size: 1rem;
+            font-weight: 600;
+            margin: 20px 0;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+
+            &::before {
+                content: "\203A";
+                color: #FF7E5F;
+                background: $discover-gradient;
+                background-size: 100%;
+                background-repeat: repeat;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent; 
+                -moz-background-clip: text;
+                -moz-text-fill-color: transparent;
+                font-size: 2rem;
+                margin-top: -5px;
+                padding-right: 25px;
+                cursor: initial;
+            }
+        }
+    }
+}
