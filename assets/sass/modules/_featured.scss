@@ -1,12 +1,4 @@
 #featured {
-    .featuredIntro {
-        margin-bottom: 3%;
-        .topText { 
-            h2 { display: none; }
-            &::after { display: none; } }
-        .weather { display: none; }
-    }
-
     .featuredTop, .featuredPosts {
         width: 90%;
         max-width: 1300px;
@@ -16,7 +8,7 @@
     .featuredTop {
         height: 70vh;
         max-height: 750px;
-        margin-bottom: 4%;
+        margin-bottom: 2%;
 
         &__wrapper {
             position: relative;
