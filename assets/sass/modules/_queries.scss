@@ -20,6 +20,31 @@
     }
 }
 
+@media screen and (min-width: 400px) {
+    #featured {
+
+        .featuredTop {
+            height: 35vh;
+        }
+
+        .featuredPosts {
+            margin: 5% auto 2%;
+
+            &__wrapper {
+                flex-wrap: wrap;
+            }
+
+            &__post {
+                width: 46%;
+                margin: 2%;
+                &:nth-child(1) {
+                    margin-left: auto;
+                }
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 411px) {
     .pageIntro {
         .topText {
@@ -317,6 +342,56 @@
     .pageIntro {
         .topText {
             padding-top: 1%;
+        }
+    }
+
+    #featured {
+        .featuredTop, .featuredPosts {
+            margin: 0 auto;
+        }
+    
+        .featuredTop {
+            height: 70vh;
+    
+            &__text {
+                width: 80%;
+    
+                h2 {
+                    font-size: 3.6rem;
+                }
+    
+                p {
+                    display: block;
+                }
+            }
+        }
+    
+        .featuredPosts {
+            height: 60vh;
+            max-height: 650px;
+            &__wrapper {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+    
+            &__post {
+                width: 22%;
+                margin: 1%;
+                
+                &:nth-child(1) {
+                    margin-left: initial;
+                }
+            }
+    
+            &__content {
+    
+                h3 {
+                    margin: auto 0 4% 4%;
+                    font-size: 1.1rem;
+                    line-height: 1.6rem;
+                }
+            }
+    
         }
     }
 

@@ -1,12 +1,14 @@
 #featured {
+    .featuredIntro { h2 { display: none; } }
+    
     .featuredTop, .featuredPosts {
         width: 90%;
         max-width: 1300px;
-        margin: 0 auto;
+        margin: 0 auto 15%;
     }
 
     .featuredTop {
-        height: 70vh;
+        height: 45vh;
         max-height: 750px;
         margin-bottom: 2%;
 
@@ -41,20 +43,22 @@
         }
 
         &__text {
-            width: 80%;
+            width: 90%;
             margin: 0 auto;
             text-align: center;
             color: white;
 
             h2 {
                 font-family: $header-font;
-                font-size: 3.6rem;
+                font-size: 2.8rem;
                 text-transform: uppercase;
                 font-weight: bold;
                 margin: 2% 0;
+                line-height: 3.4rem;
             }
 
             p {
+                display: none;
                 font-family: $body-font;
                 width: 60%;
                 max-width: 500px;
@@ -67,20 +71,23 @@
     }
 
     .featuredPosts {
-        height: 60vh;
-        max-height: 650px;
+        margin: 8% auto;
         &__wrapper {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
+            overflow-x: scroll;
+            padding-bottom: 3%;
         }
 
         &__post {
-            width: 22%;
+            width: 60%;
             position: relative;
             flex: 0 0 auto;
-            margin: 1%;
+            margin: 3%;
             text-decoration: none;
+
+            &:nth-child(1) {
+                margin-left: 0;
+            }
 
             &::after {
                 display: block;
@@ -121,10 +128,10 @@
 
             h3 {
                 width: 90%;
-                margin: auto 0 4% 4%;
+                margin: auto 0 6% 4%;
                 font-family: $header-font;
-                font-size: 1.1rem;
-                line-height: 1.6rem;
+                font-size: 0.9rem;
+                line-height: 1.2rem;
                 font-weight: bold;
             }
         }
