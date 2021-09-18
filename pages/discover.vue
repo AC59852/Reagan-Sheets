@@ -8,7 +8,9 @@
 
 <script>
 export default {
-
+  head: {
+    title: 'Discover | Reagan Sheets'
+  }
 }
 </script>
 

@@ -15,10 +15,10 @@
                   <div class="discoverTopics__list">
                       <nuxt-link to="/" v-for="item in currentTopic.items" :key="item.id" class="discoverTopics__item">
                         <img src="~/assets/images/hiking.jpg" :alt="item.data.name" class="discoverTopics__img">
-                        <span>
+                        <div>
                             <h3 class="discoverTopics__title">{{ item.data.name }}</h3>
                             <span class="discoverTopics__info">{{ item.data.info }}</span>
-                        </span>
+                        </div>
                       </nuxt-link>
                   </div>
               </div>

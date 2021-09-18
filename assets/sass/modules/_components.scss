@@ -14,6 +14,7 @@
             font-weight: bold;
             letter-spacing: 0.35px;
             line-height: 1.8rem;
+            width: 90%;
         }
 
         h2 {
@@ -30,7 +31,7 @@
     }
 }
 
-.discoverIntro {
+.discoverIntro, .featuredIntro {
     margin-bottom: 3%;
 
     h2 {

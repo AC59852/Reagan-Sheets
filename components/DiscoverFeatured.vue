@@ -2,11 +2,11 @@
   <section class="discoverTop">
       <div class="discoverFeatured">
           <nuxt-link to="/">
-            <span class="discoverFeatured__content">
+            <div class="discoverFeatured__content">
                 <span class="discoverFeatured__tag">Tag</span>
                 <h2 class="discoverFeatured__title">Featured Content</h2>
                 <span class="discoverFeatured__info">Reagan Sheets | 30 August 2021</span>
-            </span>
+            </div>
           </nuxt-link>
       </div>
       <div class="discoverRecents">
@@ -15,13 +15,13 @@
               <button>Recent</button>
           </div>
           <ul class="discoverRecents__list">
-              <li to="/" v-for="item in items" :key="item.id" class="discoverRecents__item">
+              <li v-for="item in items" :key="item.id" class="discoverRecents__item">
                  <nuxt-link to="/">
                     <img src="~/assets/images/rainforest.jpg" :alt="item.data.name" class="discoverRecents__img">
-                    <span>
+                    <div>
                         <h2 class="discoverRecents__title">{{ item.data.name }}</h2>
                         <p class="discoverRecents__info">{{ item.data.info }}</p>
-                    </span>
+                    </div>
                   </nuxt-link> 
               </li>
           </ul>

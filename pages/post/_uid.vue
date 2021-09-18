@@ -64,6 +64,11 @@ export default {
           name: 'twitter:image:alt',
           content: this.post.title[0].text
         },
+        { 
+          hid: 'og:type', 
+          name: 'og:type', 
+          content: 'article' 
+        },
         {
           hid: 'og:title',
           name: 'og:title',

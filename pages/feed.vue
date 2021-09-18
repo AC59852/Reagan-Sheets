@@ -22,6 +22,10 @@
 
 <script>
 export default {
+    head: {
+        title: 'Feed | Reagan Sheets'
+    },
+
     data() {
         return {
             headings: [

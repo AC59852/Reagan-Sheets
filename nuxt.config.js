@@ -1,11 +1,21 @@
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'reagan-sheets',
+    title: 'Reagan Sheets',
     meta: [
-      { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: `I'm Reagan Sheets, a quirky, modern, and relatable geek - that loves to write about anything ranging from anime to food. Check it out!` },
+      { hid: 'og:type', name: 'og:type', content: 'blog' },
+      { hid: 'og:title', name: 'og:title', content: 'Reagan Sheets' },
+      { hid: 'og:description', name: 'og:description', content: `I'm Reagan Sheets, a quirky, modern, and relatable geek - that loves to write about anything ranging from anime to food. Check it out!` },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Reagan Sheets' },
+      { hid: 'og:image', name: 'og:image', content: '/' },
+      { hid: 'og:image:alt', name: 'og:image:alt', content: 'Regan Sheets Logo' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Reagan Sheets' },
+      { hid: 'twitter:description', name: 'twitter:description', content: `I'm Reagan Sheets, a quirky, modern, and relatable geek - that loves to write about anything ranging from anime to food. Check it out!` },
+      { hid: 'twitter:image', name: 'twitter:image', content: '/' },
+      { hid: 'twitter:image:alt', name: 'twitter:image:alt', content: 'Regan Sheets Logo' },
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [

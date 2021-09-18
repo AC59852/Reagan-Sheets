@@ -17,6 +17,10 @@
 
 <script>
 export default {
+    head: {
+        title: 'Featured | Reagan Sheets'
+    },
+
     data() {
         return {
             featuredTop: {

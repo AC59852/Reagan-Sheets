@@ -12,7 +12,7 @@
         </nuxt-link>
     </div>
     </section>
-    <section class="homeArticles" id="articlesOne">
+    <section class="homeArticles" id="articlesTwo">
       <h2>Featured Video Game Blog Posts</h2>
       <div class="articlesWrapper" id="articleWrapper2">
         <nuxt-link v-for="post in posts2" :key="post.uid" :to="'/post/' + post.uid" class="article">
