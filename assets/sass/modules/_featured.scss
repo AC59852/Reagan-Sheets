@@ -8,7 +8,7 @@
     }
 
     .featuredTop {
-        height: 45vh;
+        height: 40vh;
         max-height: 750px;
         margin-bottom: 2%;
 
@@ -74,7 +74,7 @@
         margin: 8% auto;
         &__wrapper {
             display: flex;
-            overflow-x: scroll;
+            overflow-x: auto;
             padding-bottom: 3%;
         }
 
@@ -82,12 +82,8 @@
             width: 60%;
             position: relative;
             flex: 0 0 auto;
-            margin: 3%;
+            margin: 0 6% 0 0;
             text-decoration: none;
-
-            &:nth-child(1) {
-                margin-left: 0;
-            }
 
             &::after {
                 display: block;
