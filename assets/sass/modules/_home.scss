@@ -1,49 +1,51 @@
 #home {
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     .homeArticles {
         width: 100%;
         margin-bottom: 8%;
         h2 {
             font-family: $header-font;
             font-weight: bold;
-            font-size: 1.3rem;
+            font-size: 21px;
             margin-bottom: 3%;
-            margin-left: 7.5%;
-            line-height: 1.8rem;
+            margin-left: 5%;
+            line-height: 29px;
         }
         .articlesWrapper {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
+            overflow-x: auto;
+            padding-bottom: 1%;
             .article {
-                margin: 0 auto;
-                width: 80%;
-                height: 325px;
+                width: 220px;
+                margin: 0 4% 8% 2%;
+                flex: 0 0 auto;
+                height: 326px;
                 background-color: #ffffff;
                 border-radius: 10px;
                 box-shadow: $home-shadow;
                 text-decoration: none;
-                margin-bottom: 8%;
-                overflow: hidden;
 
                 // There's a lot of content that will be displayed, which feels overwhelming
                 // quickly, so just hide anything after the 4th box
                 &:nth-child(n+5) {
                     display: none;
                 }
+
                 img {
                     width: 92%;
                     margin: 0 auto;
                     display: flex;
                     border-radius: 10px;
-                    height: 150px;
+                    height: 40%;
                     margin-top: 4.5%;
                     object-fit: cover;
                     object-position: top;
                 }
                 h2 {
-                    font-size: 1rem;
+                    font-size: 16px;
                     color: #041e3b;
-                    line-height: 1.4rem;
+                    line-height: 22px;
                     width: 90%;
                     margin: 4% auto 3%;
                 }
@@ -52,9 +54,9 @@
                     width: 85%;
                     margin: 2% auto 0;
                     font-family: $body-font;
-                    font-size: 0.9rem;
+                    font-size: 14px;
                     color: #585858c5;
-                    line-height: 1.2rem;
+                    line-height: 20px;
                 }
             }
         }

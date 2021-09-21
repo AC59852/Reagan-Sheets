@@ -58,27 +58,13 @@
             }
 
             .articlesWrapper {
-                flex-direction: row;
-                overflow-x: auto;
-                padding-bottom: 3%;
-
                 .article {
-                    width: 200px;
-                    margin: 0 4% 8% 2%;
-                    flex: 0 0 auto;
-                    height: 326px;
-
                     &:first-child {
                         margin-left: 4%;
                     }
 
-                    img {
-                        width: 185px;
-                        height: 130px;
-                    }
-
                     p {
-                        width: 86%;
+                        width: 90%;
                     }
                 }
             }

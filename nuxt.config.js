@@ -85,6 +85,12 @@ export default {
     },
     icon: {
       fileName: 'icon.png'
+    },
+
+    meta: {
+      mobileApp: true,
+      appleStatusBarStyle: 'black-translucent',
+      theme_color: '#fdf4ea'
     }
   },
 
