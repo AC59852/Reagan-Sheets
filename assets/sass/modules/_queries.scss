@@ -9,27 +9,25 @@
     }
 
     #featured {
-        .featuredTop {
-            height: 33vh;
-        }
 
         .featuredPosts {
             margin: 5% auto 2%;
 
             &__wrapper {
                 flex-wrap: wrap;
+                justify-content: center;
             }
 
             &__content {
                 h3 {
-                    font-size: 0.95rem;
+                    font-size: 15px;
                     margin: auto 0 6% 6%;
                 }
             }
 
             &__post {
-                width: 46%;
-                margin: 2%;
+                width: 47%;
+                margin: 1.5%;
             }
         }
     }
@@ -40,11 +38,11 @@
             h1 {
                 margin-left: 0;
                 width: 90%;
-                line-height: 2.3rem;
-                font-size: 1.8rem;
+                line-height: 37px;
+                font-size: 29px;
             }
             h2 {
-                font-size: 1.125rem;
+                font-size: 18px;
             }
         }
     }
@@ -53,19 +51,11 @@
         margin-bottom: 10%;
         .homeArticles {
 
-            h2:nth-child(1) {
-                margin-left: 5%;
-            }
+            h2:nth-child(1) { margin-left: 5%; }
 
             .articlesWrapper {
                 .article {
-                    &:first-child {
-                        margin-left: 4%;
-                    }
-
-                    p {
-                        width: 90%;
-                    }
+                    p { width: 90%; }
                 }
             }
         }
@@ -75,26 +65,26 @@
         .postWrapper {
             .postSmall {
                 h1 {
-                    font-size: 2.2rem;
-                    line-height: 2.8rem;
+                    font-size: 34px;
+                    line-height: 45px;
                 }
 
                 div {
                     h2, h3, h4, h5 {
-                        font-size: 1.7rem;
-                        line-height: 2rem;
+                        font-size: 24px;
+                        line-height: 28px;
                     }
 
                     p {
-                        font-size: 1.05rem;
-                        line-height: 1.45rem;
+                        font-size: 14px;
+                        line-height: 20px;
                     }
                 }
 
                 .postPreview {
                     p {
-                        font-size: 0.95rem;
-                        line-height: 1.3rem;
+                        font-size: 14px;
+                        line-height: 21px;
                     }
                 }
             }
@@ -345,7 +335,6 @@
         }
     
         .featuredTop {
-            height: 70vh;
     
             &__text {
                 width: 80%;
@@ -361,7 +350,6 @@
         }
     
         .featuredPosts {
-            height: 60vh;
             max-height: 650px;
             &__wrapper {
                 flex-wrap: wrap;
@@ -775,7 +763,6 @@
     }
 
     #featured {
-        .featuredTop { height: 75vh; }
         .featuredPosts { height: auto; }
     }
 }

@@ -8,24 +8,22 @@
     }
 
     .featuredTop {
-        height: 40vh;
-        max-height: 750px;
         margin-bottom: 2%;
 
         &__wrapper {
             position: relative;
             width: 100%;
-            height: 100%;
+            padding-bottom: min(90%, 740px);
             box-shadow: $discover-shadow;
-            overflow: hidden;
             display: flex;
             align-items: center;
             border-radius: 5px;
             text-decoration: none;
+            overflow: hidden;
             
             &:hover {
                 img {
-                    transform: scale(1.1);
+                    transform: scale(1.15);
                 }
             }
 
@@ -43,18 +41,21 @@
         }
 
         &__text {
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 90%;
-            margin: 0 auto;
             text-align: center;
             color: white;
 
             h2 {
                 font-family: $header-font;
-                font-size: 2.8rem;
+                font-size: 40px;
                 text-transform: uppercase;
                 font-weight: bold;
                 margin: 2% 0;
-                line-height: 3.4rem;
+                line-height: 48px;
             }
 
             p {
@@ -63,8 +64,8 @@
                 width: 60%;
                 max-width: 500px;
                 margin: 0 auto;
-                font-size: 1rem;
-                line-height: 1.6rem;
+                font-size: 16px;
+                line-height: 26px;
                 letter-spacing: 0.1px;
             }
         }
@@ -75,7 +76,7 @@
         &__wrapper {
             display: flex;
             overflow-x: auto;
-            padding-bottom: 3%;
+            padding-bottom: 7%;
         }
 
         &__post {
@@ -93,7 +94,7 @@
 
             &:hover {
                     img {
-                        transform: scale(1.1);
+                        transform: scale(1.15);
                     }
             }
         }
@@ -126,8 +127,8 @@
                 width: 90%;
                 margin: auto 0 6% 4%;
                 font-family: $header-font;
-                font-size: 0.9rem;
-                line-height: 1.2rem;
+                font-size: 15px;
+                line-height: 19px;
                 font-weight: bold;
             }
         }
